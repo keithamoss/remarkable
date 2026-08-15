@@ -1,0 +1,17 @@
+{
+  "cSpell.enabled": true,
+  "cSpell.customDictionaries": {
+    "project-words": {
+      "name": "project-words",
+      "path": "${workspaceFolder}/cspell.json",
+      "description": "Workspace-specific spellings for the remarkable project"
+    }
+  },
+  "chat.tools.terminal.autoApprove": {
+    "/^python generate\\.py$/": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "venv/bin/python": true
+  }
+}
