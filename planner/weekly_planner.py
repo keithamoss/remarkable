@@ -122,8 +122,8 @@ def build_weekly_review_page(context: RenderContext, day: date) -> list[str]:
         context,
         y,
         "PROJECTS",
-        "Define the outcome; line up the next action for this week.",
-        ((left, "PROJECT"), (left + 43, "OUTCOME"), (left + 90, "NEXT ACTION")),
+        "Line up the next actions for this week.",
+        ((left, "PROJECT"), (left + 52.87, "NEXT ACTIONS")),
         row_count=5,
         row_height=7.5,
     )
@@ -473,7 +473,7 @@ def _add_weekday_row(
         line_right = block_left + writing_width - 3
         line_gap = 2
         available_width = line_right - line_left - line_gap
-        short_width = available_width * 0.3
+        short_width = available_width * 0.3 * 0.7
         for row in range(4):
             line_y = content_top + (row + 0.75) * writing_row_height
             commands.append(
